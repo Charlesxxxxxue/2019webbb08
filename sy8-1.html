@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>sy8-1</title>
+	<style>
+		form{
+			background-color: rgba(0,0,0,0.7);
+			color: #FFFFFF;
+			width: 500px;
+			height: 650px;
+		}
+		td{height:40px;}
+		h2{
+		
+			text-align: center;
+		}
+		#box1{
+			margin-top: 30px;
+			text-align: center;
+		}
+		select{
+			width: 200px;
+		}
+		
+		.a{
+			width: 40px;
+		}
+		.b{width: 100px;}
+		.c{width: 300px;}
+	</style>
+</head>
+
+<body>
+	<form action="#" method="post">
+	<h2>增加快递信息</h2>
+		<fieldset>
+		<legend>发货单</legend>
+			<table>
+				<tr>
+			<td>发货人：</td><td><input type="text" name="fahuoren"></td>
+					<td>地址：</td><td><input type="text" name="address"></td></tr>
+		<tr>
+			<td>电话：</td><td><input type="text" name="number"></td>
+			<td>邮编：</td><td><input type="text" name="youbian"></td></tr>
+			</table>
+		</fieldset>
+	<fieldset>
+		<legend>收货单</legend>
+		<table>
+			<tr>
+			<td>收货人：</td><td><input type="text" name="shouhuoren"></td>
+			<td>地址：</td><td><input type="text" name="address"></td></tr>
+		<tr><td>电话：</td><td><input type="text" name="number"></td>
+			<td>邮编：</td><td><input type="text" name="youbian"></td></tr>
+			<tr><td>地区：</td><td colspan="3">
+				<select>
+		<option>北京</option>
+				</select>
+				</td></tr>
+			
+			<tr><td>包装：</td><td colspan="3"><input type="checkbox" name="account" value="1" id="paper"><label for="paper">纸箱</label>
+	<input type="checkbox" name="account" value="1" id="wood">
+
+	<label for="wood">木箱</label>
+<input type="checkbox" name="account" value="1" id="dai">
+	<label for="dai">快递袋</label>
+<input type="checkbox" name="account" value="1" id="other">
+				<label for="other">其他</label></td></tr>
+			<tr>
+		<td>付款方式：</td>
+<td colspan="3"><input type="radio" name="payway" value="现金" id="cash">
+<label for="cash">现金</label>
+<input type="radio" name="payway" value="支付宝" id="zhifubao">
+<label for="zhifubao">支付宝</label>
+<input type="radio" name="payway" value="网银" id="wangyin">
+<label for="wangyin">网银</label>
+<input type="radio" name="payway" value="ATM" id="ATM">
+<label for="ATM">ATM</label></td></tr>
+</table>
+		</fieldset><fieldset>
+		<legend>货物信息</legend>
+		<table>
+			<tr>
+			<td>货物名称：</td><td colspan="5"><input type="text" name="name" class="c"></td></tr>
+			<tr>
+			<td>数量：</td><td><input type="text" name="member" class="a"></td>
+		<td>重量：</td><td><input type="text" name="weight" class="a"></td>
+			<td>发货时间:</td><td><input type="text" name="time" class="b"></td></tr>
+			</table>
+		</fieldset>
+<div id="box1"><input type="button" name="yes" value="确定">
+<input type="button" name="no" value="取消"></div>
+	</form>
+</body>
+</html>
